@@ -647,13 +647,17 @@ button a:hover {
     height: 100%;
     left: 0;
     top: 0;
-    background: url(/imagenes/QS1.jpg) no-repeat center;
+    background: url(imagenes/QS1.jpg) no-repeat center;
     background-size: cover;
     filter: blur(50px);
     z-index: -1;
 }
 
-
+.tfel{ 
+    background-size: cover; 
+    height: 100%; 
+    background: url(imagenes/QS1.jpg) no-repeat center;
+}
 .contact-box {
     max-width: 850px;
     display: grid;
