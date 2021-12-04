@@ -1,4 +1,3 @@
-
 'use strict'
 var testim = document.getElementById("testim"),
     testimDots = Array.prototype.slice.call(document.getElementById("testim-dots").children),
@@ -8,10 +7,9 @@ var testim = document.getElementById("testim"),
     testimSpeed = 4500,
     currentSlide = 0,
     currentActive = 0,
-    testimTimer
-    ;
+    testimTimer;
 // coding with nick
-window.onload = function () {
+window.onload = function() {
 
     // Testim Script
     function playSlide(slide) {
@@ -35,20 +33,20 @@ window.onload = function () {
         currentActive = currentSlide;
 
         clearTimeout(testimTimer);
-        testimTimer = setTimeout(function () {
+        testimTimer = setTimeout(function() {
             playSlide(currentSlide += 1);
         }, testimSpeed)
     }
 
-    testimleftArrow.addEventListener("click", function () {
+    testimleftArrow.addEventListener("click", function() {
         playSlide(currentSlide -= 1);
     })
-    testimRightArrow.addEventListener("click", function () {
+    testimRightArrow.addEventListener("click", function() {
         playSlide(currentSlide += 1);
     })
 
     for (var l = 0; l < testimDots.length; l++) {
-        testimDots[l].addEventListener("click", function () {
+        testimDots[l].addEventListener("click", function() {
             playSlide(currentSlide = testimDots.indexOf(this));
         })
     }
