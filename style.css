@@ -647,7 +647,7 @@ button a:hover {
     height: 100%;
     left: 0;
     top: 0;
-    background: url(/imagenes/Agencia.jpg) no-repeat center;
+    background: url(/imagenes/QS1.jpg) no-repeat center;
     background-size: cover;
     filter: blur(50px);
     z-index: -1;
@@ -662,12 +662,6 @@ button a:hover {
     text-align: center;
     background-color: #fff;
     box-shadow: 0px 0px 19px 5px rgb(0, 0, 0, 0.19);
-}
-
-.tfel {
-    height: 100%;
-    background: url(/imagenes/Agencia.jpg) no-repeat center;
-    background-size: cover;
 }
 
 .right {
