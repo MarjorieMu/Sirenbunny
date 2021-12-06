@@ -1,0 +1,285 @@
+<!--Página contáctanos-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CREACTIVA | CONTACTO</title>
+    <link rel="shortcut icon" href="imagenes/creactival-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/120dce4598.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+
+<body>
+
+    <!--Barra de navegación-->
+    <div class="w3-sidebar w3-bar-block w3-animate-left" style="display:none; background-color: transparent;" id="mySidebar">
+        <button class="w3-bar-item w3-button w3-large w3-round-xxlarge w3-hover-white w3-hover-text-black" style="color:#000" onclick="w3_close()">Close &times;</button>
+        <div>
+            <div class="w3-bar-item w3-button w3-large w3-white" onclick="myAccFunc()">SERVICIOS <i class="fa fa-caret-down"></i></div>
+            <div id="demoAcc" class="w3-hide w3-white w3-card-4">
+                <a href="page1.1.html" class="w3-bar-item w3-button w3-large w3-hover-text-blue w3-hover-white">Asesoria Marketing</a>
+                <a href="page1.2.html" class="w3-bar-item w3-button w3-large w3-hover-text-blue w3-hover-white">Redes Sociales</a>
+                <a href="page1.3.html" class="w3-bar-item w3-button w3-large w3-hover-text-blue w3-hover-white">Diseño De Pagina Web</a>
+                <a href="page1.4.html" class="w3-bar-item w3-button w3-large w3-hover-text-blue w3-hover-white">Paquete De Branding</a>
+            </div>
+        </div>
+        <a href="page1.html" class="w3-bar-item w3-button w3-large  w3-hover-text-blue w3-hover-white" style="margin-top: 30px;">CATÁLOGO DE COMPRA</a>
+        <a href="page2.html" class="w3-bar-item w3-button w3-large  w3-hover-text-blue w3-hover-white" style="margin-top: 30px;">PORTAFOLIO</a>
+        <a href="page3.html" class="w3-bar-item w3-button w3-large  w3-hover-text-blue w3-hover-white" style="margin-top: 30px;">CONTÁCTANOS</a>
+        <li class="search-icon" style="margin-top: 30px;">
+            <input type="search" placeholder="Buscar">
+            <label class="icon">
+                <span class="fas fa-search"></span>
+            </label>
+        </li>
+    </div>
+
+    <div id="main">
+
+        <div style="background-color: #f3414a;
+      border-bottom-right-radius: 500px;
+        border-bottom-left-radius: 500px;
+        position: fixed;
+        z-index: 1000000;
+        width: 100%;">
+            <div class="w3-container" style=" display: flex;
+        padding: 50px;
+        align-items: center;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 20px;
+        transition: 500ms;
+        border-bottom: 10px solid #f74714; 
+        background: linear-gradient(to top, #ffffff, #ffffff); 
+        border-bottom-right-radius: 500px;
+        box-shadow: 0 9px 10px rgba(0,0,0,0.2);">
+
+                <button id="openNav" class="w3-button w3-xlarge w3-circle w3-hover-black w3-hover-text-white" style="color: #000;" onclick="w3_open()">&#9776;</button>
+                </ul>
+
+                <a href="index.html"><img src="imagenes/CREACTIVA-05.png" width="230px" height="100px" alt="pokemon" class="img-logo" style="margin-left: 30px;"></a>
+                <ul>
+            </div>
+        </div>
+
+        <br><br><br><br><br>
+
+
+        <br>
+        <form class="gform pure-form pure-form-stacked" method="POST" data-email="info.creactiva.sv@gmail.com" action="https://script.google.com/macros/s/AKfycbwGH6OcgDUMtX_pvvDD8YDgE69c0YNhlHie0P1TfGPS8wckI0vGslu0GDFRLReU14o0tg/exec">
+            <div class="form-elements"><br>
+
+                <div class="contenedor-contact">
+                    <div class="contact-box">
+                        <div class="tfel" style="height: 100%;
+                        background: url(/imagenes/QS1.jpg) no-repeat center;
+                        background-size: cover;"></div>
+                        <div class="right">
+                            <h2>Contáctanos</h2>
+                            <input type="text" name="name" class="field" required="" placeholder="Nombre">
+                            <input type="email" name="email" class="field" required="" placeholder="Email">
+                            <input type="text" class="field" name="phone" required="" placeholder="Celular">
+                            <textarea class="field area" name="message" required="" placeholder="Mensaje"> </textarea>
+                            <button class="btn-contact">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Thankyou_message -->
+            <div class="thankyou_message" style="display:none;"><br><br>
+                <div class="contenedor-contact">
+                    <div class="contact-box" style="height: 525px;">
+                        <div class="tfel" style="height: 100%;
+                        background: url(/imagenes/QS1.jpg) no-repeat center;
+                        background-size: cover;"></div>
+                        <div class="right">
+                            <h2>¡Gracias por contactarnos!</h2>
+                        </div>
+                    </div>
+                </div>
+        </form>
+
+
+        <script data-cfasync="false" type="text/javascript">
+            (function() {
+                function validEmail(email) {
+                    var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+                    return re.test(email);
+                }
+
+                function validateHuman(honeypot) {
+                    if (honeypot) {
+                        console.log("Robot Detected!");
+                        return true;
+                    } else {
+                        console.log("Welcome Human!");
+                    }
+                }
+
+                function getFormData(form) {
+                    var elements = form.elements;
+
+                    var fields = Object.keys(elements).filter(function(k) {
+                        return (elements[k].name !== "honeypot");
+                    }).map(function(k) {
+                        if (elements[k].name !== undefined) {
+                            return elements[k].name;
+                        } else if (elements[k].length > 0) {
+                            return elements[k].item(0).name;
+                        }
+                    }).filter(function(item, pos, self) {
+                        return self.indexOf(item) == pos && item;
+                    });
+
+                    var formData = {};
+                    fields.forEach(function(name) {
+                        var element = elements[name];
+                        formData[name] = element.value;
+                        if (element.length) {
+                            var data = [];
+                            for (var i = 0; i < element.length; i++) {
+                                var item = element.item(i);
+                                if (item.checked || item.selected) {
+                                    data.push(item.value);
+                                }
+                            }
+                            formData[name] = data.join(', ');
+                        }
+                    });
+
+                    // add form-specific values into the data
+                    formData.formDataNameOrder = JSON.stringify(fields);
+                    formData.formGoogleSheetName = form.dataset.sheet || "Sheet1"; // default sheet name
+                    formData.formGoogleSendEmail = form.dataset.email || ""; // no email by default
+
+                    console.log(formData);
+                    return formData;
+                }
+
+                function handleFormSubmit(event) {
+                    event.preventDefault();
+                    var form = event.target;
+                    var data = getFormData(form);
+                    if (data.email && !validEmail(data.email)) {
+                        var invalidEmail = form.querySelector(".email-invalid");
+                        if (invalidEmail) {
+                            invalidEmail.style.display = "block";
+                            return false;
+                        }
+                    } else {
+                        disableAllButtons(form);
+                        var url = form.action;
+                        var xhr = new XMLHttpRequest();
+                        xhr.open('POST', url);
+                        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+                        xhr.onreadystatechange = function() {
+                            console.log(xhr.status, xhr.statusText);
+                            console.log(xhr.responseText);
+                            var formElements = form.querySelector(".form-elements")
+                            if (formElements) {
+                                formElements.style.display = "none"; // hide form
+                            }
+                            var thankYouMessage = form.querySelector(".thankyou_message");
+                            if (thankYouMessage) {
+                                thankYouMessage.style.display = "block";
+                            }
+                            return;
+                        };
+                        var encoded = Object.keys(data).map(function(k) {
+                            return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
+                        }).join('&');
+                        xhr.send(encoded);
+                    }
+                }
+
+                function loaded() {
+                    console.log("Contact form submission handler loaded successfully.");
+                    var forms = document.querySelectorAll("form.gform");
+                    for (var i = 0; i < forms.length; i++) {
+                        forms[i].addEventListener("submit", handleFormSubmit, false);
+                    }
+                };
+                document.addEventListener("DOMContentLoaded", loaded, false);
+
+                function disableAllButtons(form) {
+                    var buttons = form.querySelectorAll("button");
+                    for (var i = 0; i < buttons.length; i++) {
+                        buttons[i].disabled = true;
+                    }
+                }
+            })();
+        </script>
+        </div>
+
+        <!--Footer-->
+        <div class="footer">
+            <div class="contenido-foo ">
+                <div class="row" style="margin-left: 20px; margin-right: 20px;">
+                    <div class="footer-col ">
+                        <h4>Compañia</h4>
+                        <ul>
+                            <li>
+                                <a href="page5.html">Quiénes somos</a>
+                            </li>
+                            <li>
+                                <a href="page6.html">Política de Privacidad</a>
+                            </li>
+                            <li>
+                                <a href="page7.html">Términos y condiciones</a>
+                            </li>
+                            <li>
+                                <a href="page3.html">Contáctanos</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col ">
+                        <h4>Servicios Online</h4>
+                        <ul>
+                            <li>
+                                <a href="page1.1.html">Asesoría de Marketing</a>
+                            </li>
+                            <li>
+                                <a href="page1.2.html">Branding</a>
+                            </li>
+                            <li>
+                                <a href="page1.3.html">Diseño Web</a>
+                            </li>
+                            <li>
+                                <a href="page1.4.html">Redes Sociales</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col ">
+                        <h4>Síguenos</h4>
+                        <div class="social-links ">
+                            <a href="https://www.instagram.com/creactivasv_/"><i class="fab fa-instagram "></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col ">
+                        <img src="imagenes/CREACTIVA-02.png" alt=" ">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-col "></div>
+            <h2 class="foo ">&copy; 2021 Copyright Creactiva. Reservados todos lo derechos</h2>
+        </div>
+
+        <script src="index.js"></script>
+        <script src="nav.js"></script>
+</body>
+
+</html>
