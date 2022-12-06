@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SirenBunny / Catalogo</title>
+    <link rel="icon" href="../IMG/Icon.png">
+<link rel="stylesheet" href="../CSS/style.css">
+<link rel="stylesheet" href="../CSS/normalize.css">
+<link rel="stylesheet" href="../CSS/estilo.css">
+    <!------------------ CDN Bostrap ------------------>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+ <!------------------ Font Awesome ------------------>
+<script src="https://kit.fontawesome.com/115f54fe19.js" crossorigin="anonymous"></script>
+
+<!--Fonts-->
+<link href="http://fonts.cdnfonts.com/css/d-din" rel="stylesheet"> 
+
+
+
+</head>
+
+
+
+<body>
+
+
+<!--Barra de Navegación-->
+<div class="sticky-top">
+  <nav class="navbar navbar-expand-sm navbar-dark barra">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-start" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <!--Zapatos-->
+          <li class="nav-item dropdown">
+            <a class="nav-link prueba text-barra" href="../HTML/Catalogo.html" role="button" data-bs-toggle="dropdown">Zapatos</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../HTML/Catalogo-Platform.html">Platforms</a></li>
+                <li><a class="dropdown-item" href="../HTML/Catalogo-Pumps.html">Pump</a></li>
+                <li><a class="dropdown-item" href="../HTML/Catalogo-Sandals.html">Sandals</a></li>
+                <li><a class="dropdown-item" href="../HTML/Catalogo-Sneakers.html">Sneakers</a></li>
+             </ul>
+            
+          </li>
+          <!--Kitchen & Drink-->
+          <li class="nav-item dropdown">
+            <a class="nav-link text-barra" href="../HTML/Catalogo.html" role="button" data-bs-toggle="dropdown">Kitchen & Drink</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../HTML/Catalogo-Bottle.html">Bottle</a></li>
+              <li><a class="dropdown-item" href="../HTML/Catalogo-Cup.html">Cup</a></li>
+              <li><a class="dropdown-item" href="../HTML/Catalogo-Straws.html">Straws</a></li>
+              <li><a class="dropdown-item" href="../HTML/Catalogo-Traveler.html">Travel Sets</a></li>
+            </ul>
+          </li>
+          <!--Marcas-->
+          <li class="nav-item">
+            <a class="nav-link text-barra" href="#">Marcas</a>
+          </li>
+          <!--Contacto-->
+          <li class="nav-item">
+            <a class="nav-link text-barra" href="#">Contacto</a>
+          </li>
+          <!--Conócenos-->
+          <li class="nav-item">
+            <a class="nav-link text-barra" href="#">Conócenos</a>
+          </li>  
+        </ul>
+      </div>
+      <div class="usuario">
+        <i style='font-size:24px' class='fas'>&#xf406;</i>
+        <i style='font-size:24px' class='fas'>&#xf290;</i>
+      </div>
+      
+    </div>
+  </nav>
+  <!--Final Barra de Navegación-->
+
+
+ <!-- Menu / Mini -->                                 
+<section class="catalogo-categorias container">
+
+ <h1 class="text-center" style="margin-top: -45px; font-family: 'Jungle Adventurer', sans-serif; font-size: 3rem;">Catalogo</h1>
+    
+ <ul class="nav nav-tabs m-4" role="tablist">
+    <li class="nav-item">
+        <a style="color: #292A3E;  font-family: 'Jungle Adventurer', sans-serif; font-size: 1.2rem;  " class="nav-link active color-categoria" data-bs-toggle="tab" href="#menu1" data-bs-toggle="tooltip" title="selecciona una categoria" id="categoria1">Vegan Shoes</a>
+    </li>
+    <li class="nav-itema">
+        <a style="color: #292A3E;  font-family: 'Jungle Adventurer', sans-serif; font-size: 1.2rem;" class="nav-link color-categoria" data-bs-toggle="tab" href="#menu2" data-bs-toggle="tooltip" title="selecciona una categoria" id="categoria2">Kitchen and Drink</a>
+    </li>
+</ul>
+
+
+<div class="tab-content m-4 ">
+    <!--Vegan Shoes-->
+    <div id="menu1" class="container tab-pane active">
+
+        <div class="filas-categorias">
+
+            <div class="container container-zapatos" style="margin-top: -150px;">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+            
+            <!-- Menu / Plataformas -->              
+            <div class="col">
+            
+            <div class="card border-0 categoria-img">
+            <a target="_blank" href="../HTML/Catalogo-Platform.html"><img class="Plataformas" src="../IMG/Catalogo-General/01.png" alt="Plataformas" style="width:100%"></a>
+            </div>
+            
+            </div>
+            
+            <!-- Menu / Pump -->     
+            <div class="col">
+            
+            <div class="card border-0 categoria-img">
+              <a target="_blank" href="../HTML/Catalogo-Pumps.html"> <img class="Pump" src="../IMG/Catalogo-General/02.png" alt="Pump" style="width:100%"></a>
+            </div>
+            
+            </div>
+            
+            <!-- Menu / Sandalias -->     
+            <div class="col">
+            
+            <div class="card border-0 categoria-img">
+              <a target="_blank" href="../HTML/Catalogo-Sandals.html"><img class="Sandals" src="../IMG/Catalogo-General/03.png" alt="Sandals" style="width:100%"></a>
+            </div>
+            
+            </div>
+            
+            <!-- Menu / Sneakers -->              
+            <div class="col">
+            
+            <div class="card border-0 categoria-img" >
+              <a target="_blank" href="../HTML/Catalogo-Sneakers.html"><img class="Sneakers" src="../IMG/Catalogo-General/04.png" alt="Sneakers" style="width:100%"></a>
+            </div>
+            
+            </div>
+            
+            </div>
+            </div>
+            
+            
+            </div>
+
+</div>
+</div>
+
+
+<div class="tab-content m-4 ">
+    <!--Kitchen and Drinks-->
+    <div id="menu2" class="container tab-pane">
+        <div class="filas-categorias">
+
+            <div class="container container-kitchen" style="margin-top: -150px;">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+            
+            <!-- Menu / Cups -->              
+            <div class="col">
+            
+            <div class="card border-0 categoria-img">
+              <a target="_blank" href="../HTML/Catalogo-Bottle.html"><img class="Cups" src="../IMG/Catalogo-General/05.png" alt="Cups" style="width:100%"></a>
+            </div>
+            
+            </div>
+            
+            <!-- Menu / Bottle -->     
+            <div class="col">
+            
+            <div class="card border-0 categoria-img">
+              <a target="_blank" href="../HTML/Catalogo-Cup.html"><img class="Bottle" src="../IMG/Catalogo-General/06.png" alt="Bottle" style="width:100%"></a>
+            </div>
+            
+            </div>
+            
+            <!-- Menu / Pajitas -->     
+            <div class="col">
+            
+            <div class="card border-0 categoria-img">
+              <a target="_blank" href="../HTML/Catalogo-Straws.html"><img class="Pajita" src="../IMG/Catalogo-General/07.png" alt="Pajita" style="width:100%"></a>
+            </div>
+            
+            </div>
+            
+            <!-- Menu / Cubiertos -->              
+            <div class="col">
+            
+            <div class="card border-0 categoria-img" >
+              <a target="_blank" href="../HTML/Catalogo-Traveler.html"><img class="Cubierto" src="../IMG/Catalogo-General/08.png" alt="Cubierto" style="width:100%"></a>
+            </div>
+            
+            </div>
+            
+            </div>
+            </div>
+            
+            
+            </div>
+
+</div>
+</div>
+
+</section>
+
+
+
+<!--Footer-->
+<div class="footer">
+    <div class="contenido-foo ">
+      <div class="row m-2">
+        <div class="col-6 col-sm-4 col-xl-3">
+          <h4>Compañia</h4>
+          <ul>
+              <li>
+                  <a href="">Cónocenos</a>
+              </li>
+              <li>
+                  <a href="">Política de Privacidad</a>
+              </li>
+              <li>
+                  <a href="">Términos y condiciones</a>
+              </li>
+              <li>
+                  <a href="">Contáctanos</a>
+              </li>
+          </ul>
+        </div>
+        <div class="col-6 col-sm-4 col-xl-3">
+          <h4>Shop Online</h4>
+          <ul>
+              <li>
+                  <a href="">Asesoría de Marketing</a>
+              </li>
+              <li>
+                  <a href="">Branding</a>
+              </li>
+              <li>
+                  <a href="">Diseño Web</a>
+              </li>
+              <li>
+                  <a href="">Redes Sociales</a>
+              </li>
+          </ul>
+        </div>
+        <div class="col-6 col-sm-4 col-xl-3">
+          <h4>Marcas</h4>
+              <ul>
+                  <li>
+                      <a href="">Asesoría de Marketing</a>
+                  </li>
+                  <li>
+                      <a href="">Branding</a>
+                  </li>
+                  <li>
+                      <a href="">Diseño Web</a>
+                  </li>
+                  <li>
+                      <a href="">Redes Sociales</a>
+                  </li>
+              </ul>
+        </div>
+        <div class="col-6 col-sm-12 col-xl-3">
+          <img src="../IMG/logo_02.png" alt=" ">
+        </div>
+      </div>
+    </div>
+    <h2 class="foo">&copy; 2021 Copyright SirenBunny. Todos los derechos reservados</h2>
+  </div>
+
+
+
+</body>
+
+
+
+</html>
