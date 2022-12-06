@@ -1,0 +1,507 @@
+@font-face {
+  font-family: 'flexslider-icon';
+  src: url('fonts/flexslider-icon.eot');
+  src: url('fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'), url('fonts/flexslider-icon.woff') 
+  format('woff'), url('fonts/flexslider-icon.ttf') format('truetype'), url('fonts/flexslider-icon.svg#flexslider-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+  color: #292A3E;
+}
+
+html{
+  scroll-padding-top: 60px;
+}
+
+
+@import url('https://fonts.cdnfonts.com/css/jungle-adventurer');
+
+h1{
+  font-family: 'D-DIN Exp', sans-serif;
+  text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #292A3E;
+}
+
+h2{
+  font-family: 'Jungle Adventurer', sans-serif;
+  text-transform: uppercase;
+    font-size: 1.0rem;
+    color: #292A3E;
+}
+
+.card-title{
+  font-family: 'Jungle Adventurer', sans-serif;
+  text-transform: uppercase;
+  color: #292A3E;
+  font-size: 1.7rem;
+  margin-top: 10px;
+}
+
+.card-price{
+  font-family: 'Jungle Adventurer', sans-serif;
+  text-transform: uppercase;
+  color: #292A3E;
+  font-size: 1.3rem;
+}
+
+.fa-star{
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: #292A3E;
+}
+
+.text-rev{
+  font-family: 'D-DIN Exp', sans-serif;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  color: #292A3E;
+}
+
+.text-rev-num{
+  font-family: 'Jungle Adventurer', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: #292A3E;
+}
+
+.btn-mas:hover{
+transform: scale(1.1);
+}
+
+.btn-compra:hover{
+  transform: scale(1.1);
+  }
+
+.text-price{
+  font-family: 'Jungle Adventurer', sans-serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #292A3E;
+}
+
+.links{
+  font-family: 'Jungle Adventurer', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.3rem;  
+  text-decoration: none;
+  color: #292A3E;
+}
+
+
+.links:hover{
+  font-family: 'Jungle Adventurer', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.3rem;  
+  text-decoration: none;
+  color: #4e5077;
+}
+
+/* Categorias */
+
+.categoria-img{
+  margin-top: 80px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.categoria-img:hover{
+    transform: scale(1.2);
+}
+
+/* Img hover- cambio de imagen */
+.card .img-top {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+
+}
+.card:hover .img-top {
+    display: inline;
+}
+
+.card:hover .img-back {
+    visibility: hidden;
+}
+
+
+/* categorias */
+
+.color-categoria{
+  font-family: 'D-DIN Exp', sans-serif;
+  text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+/* Bton compra */
+.compra{
+    margin-top: -6px;
+}
+@media (min-width: 300px){
+    .compra{
+        margin-top: 5px;
+    }
+}
+
+/* Descripcion producto - pagina compra */
+.descripcion{
+    margin-top: 10px;
+    text-align: justify;
+}
+
+
+
+
+
+/* colores */
+
+.color-choose div {
+    display: inline-block;
+  }
+  
+.color:hover{
+transform: scale(1.2);
+}
+
+  .color-choose input[type="radio"] {
+    display: none;
+  }
+  
+  .color-choose input[type="radio"] + label span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: -1px 4px 0 0;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  .color-choose input[type="radio"] + label span {
+    border: 2px solid #FFFFFF;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.124);
+  }
+  
+  .color-choose input[type="radio"]#red + label span {
+    background-color: #232323;
+  }
+  .color-choose input[type="radio"]#blue + label span {
+    background-color: #3A3839;
+  }
+  .color-choose input[type="radio"]#black + label span {
+    background-color: #595959;
+  }
+
+
+
+  /* holis */
+
+
+/* carrusel - descipcion imghane producto */
+img{
+    width: 100%;
+    display: block;
+}
+.img-display{
+    overflow: hidden;
+}
+.img-showcase{
+    display: flex;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+.img-showcase img{
+    min-width: 100%;
+}
+.img-select{
+    display: flex;
+}
+.img-item{
+    margin: 0.3rem;
+}
+.img-item:nth-child(1),
+.img-item:nth-child(2),
+.img-item:nth-child(3){
+    margin-right: 0;
+}
+.img-item:hover{
+    opacity: 0.8;
+}
+
+
+.size{
+    height: 40px;
+}
+
+
+/* botones subir y bajar cantidad */
+
+.cantidad{
+    height: 50px;
+}
+
+.value-button {
+    display: inline-block;
+    margin: 0px;
+    width: 40px;
+    height: 41px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 6px 0;
+    background: #292A3E;
+    color: #FFFFFF;
+    font-family: 'Jungle Adventurer', sans-serif;
+font-size: 25px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .value-button:hover {
+    cursor: pointer;
+  }
+  
+  form #decrease {
+    margin-right: -10px;
+    border-radius: 8px 0 0 8px;
+  
+  }
+  
+  form #increase {
+    margin-left: -10px;
+    border-radius: 0 8px 8px 0;
+  }
+  
+  form #input-wrap {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  input#number {
+    text-align: center;
+    border: none;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 0px;
+    width: 100px;
+    height: 40px; 
+   position: relative;
+  z-index: -10000;
+  }
+  
+
+/* jjj */
+
+
+
+.conteiner-rew{
+   margin-top: 20px;
+   border-top: 1px solid rgb(218, 218, 218);
+
+}
+
+
+
+
+
+
+/* credit card */
+.credit-card {
+    margin-top: -60px;}
+    
+    .name-group {
+      
+      
+      bottom:20px;
+      margin-left:18px;}
+      .firstName {
+        width:40px;
+        height:10px;
+        border-radius:7px;
+        background: white;
+        margin-right:14px;
+      }
+      .lastName {
+        width:50px;
+        height:10px;
+        border-radius:7px;
+        background: white;
+      }
+    
+    .cvv {
+      height:10px;
+      width:30px;
+      border-radius:7px;
+      background: white;
+      
+      bottom:40px;
+      right:90px;
+    }
+  
+    .inputLabel {
+      font-size:12px;
+      font-weight:800;
+      text-transform: uppercase;
+      margin:0 0 6px 0;
+      color:#292A3E
+    }
+    input {
+      height:38px;
+      padding-left:10px;
+      border-radius:6px;
+      border:1px solid #83729C;;
+      margin:0 0 20px 0;
+    }
+    input::placeholder {
+      color:#83729C;;
+      position:relative;
+      bottom:1px;
+    }
+    input[type=text]:focus {
+      border:3px solid #292A3E;
+      border-radius:6px;
+      box-shadow:none;
+      outline:none;
+    }
+    .card-number {
+      width:320px;
+    }
+    .first-name {
+      width:320px;
+    }
+    .last-name {
+      width:320px;
+    }
+    .card-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center
+      }
+      .exp-date-input {
+        margin-right:20px;
+        width:140px;
+      }
+      .cvv-input {
+        width:60px;
+      }
+
+      .boton-tarjeta {
+        display: flex;
+        align-items: center;
+        justify-content: center
+            }
+
+
+
+            .container-top{
+              margin-top: 10px;
+              border-top: 1px solid rgb(218, 218, 218);
+           }
+
+
+
+           .compra{
+            background-color: #4e5077;
+           }
+
+
+
+           
+           .icons-cred:hover{
+transform: scale(1.2);
+cursor: pointer;
+color: #4e5077;
+           }
+
+
+
+
+           .descripcion{
+            font-family: 'D-DIN Exp', sans-serif;
+    font-size: 1rem;
+    color: #292A3E;
+           }
+
+           .modal {
+            z-index:1;
+            display:none;
+            padding-top:10px;
+            position:fixed;
+            left:0;
+            top:0;
+            width:100%;
+            height:100%;
+            overflow:auto;
+            background-color:rgb(0,0,0);
+            background-color:rgba(0,0,0,0.8)
+            }
+            
+            .modal-content{
+            margin: auto;
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform:  translate(-50%, -50%);
+            }
+            
+            .modal-hover-opacity {
+            opacity:1;
+            filter:alpha(opacity=100);
+            --webkit-backface-visibility:hidden
+            }
+            
+            .modal-hover-opacity:hover {
+            opacity:0.60;
+            filter:alpha(opacity=60);
+            --webkit-backface-visibility:hidden
+            }
+            
+            .img-in-modal{
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+              width: 50%;
+            }
+            .close {
+            text-decoration:none;
+            float:right;
+            font-size:24px;
+            font-weight:bold;
+            color:white
+            }
+            .container1 {
+            width:200px;
+            display:inline-block;
+            }
+
+            .titulo-producto{
+              font-family: 'Jungle Adventurer', sans-serif; 
+              font-size: 3rem;
+            }
+
+            .links{
+              margin-top: 20px;
+            }
+
+            .text-price{
+              margin-top: 20px; 
+              font-size: 1.2rem;
+            }
+
+            .tamaño{
+              font-family: 'Jungle Adventurer', sans-serif; 
+              color: #292A3E; 
+              border-color: #292A3E; 
+              border-width: 2px;
+            }
+
+          
