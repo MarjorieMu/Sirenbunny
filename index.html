@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SirenBunny | Home</title>
+    <link rel="icon" href="IMG/Icon.png">
+    <!--CDN Boostrap-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Box Icons -->
+<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+ <!--W3-->
+ <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+ <!--Iconos-->
+ <script src="https://kit.fontawesome.com/120dce4598.js" crossorigin="anonymous"></script>
+<!-- Fonts -->
+<link href="https://fonts.cdnfonts.com/css/d-din?styles=37959,37958,37957,37961,37964,37963,37960,37962" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/jungle-adventurer" rel="stylesheet">
+ <!--CSS-->
+ <link rel="stylesheet" href="estilo.css">
+ <link rel="stylesheet" href="CSS/style.css">
+ <link rel="stylesheet" href="CSS/style-zapatos-cocina.css">
+
+  <!-- Fonts -->
+  <link href="https://fonts.cdnfonts.com/css/d-din?styles=37959,37958,37957,37961,37964,37963,37960,37962" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/jungle-adventurer" rel="stylesheet">
+  
+</head>
+
+<body>
+  <input type="checkbox" id="cerrar">
+<label for="cerrar" id="btn-cerrar">x</label>
+<div class="modal2">
+  <div class="contenido2">
+    <div class="row ">
+      <div class="col">
+        <img src="IMG/Imagen_AI.jpg" class="modal2-image">
+      </div>
+      <div class="col columna-modal2">
+        <h2 class="modal-1">Trae a la vida</h2>
+        <h2 class="modal-2">Tus ideas</h2>
+        <p>Consigue tu libro totalmente gratis y descubre <br>
+          como personalizar tus botas de forma sencilla y <br>
+          ecologica</p>
+          <button class="modal2-button"><a href="HTML/Landing.html"> Saber más</a></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      <!--Barra de Anuncios--> 
+      <div class="d-flex justify-content-between promociones  ">
+        <div></div>
+        <!--Descuentos-->
+          <div class="h1-promociones ">
+            <div class="item">Compra 2 y Ahorra US$3</div>
+            <div class="item">Compra 3 y Ahorra US$5</div>
+            <div class="item">Compra 3 y obten el 60%</div>
+          </div>
+  
+        <!--Temporizador-->
+        <div class="temporizador d-flex">
+          <div class="horas" id="horas">--</div>
+          <p>H</p>
+          <div class="minutos" id="minutos">--</div>
+          <p>M</p>
+          <div class="segundos" id="segundos">--</div>
+          <p>S</p>
+        </div>
+      </div>
+      <!--Final Barra de Anuncios--> 
+
+      <!--Logo-->
+      <div class="logo">
+        <a href="index.html"><img src="IMG/logo_01.png" class="mx-auto d-block"></a>
+      </div>
+      
+       <!--Barra de Navegación-->
+  <div class="sticky-top">
+    <nav class="navbar navbar-expand-sm navbar-dark barra">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-start" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <!--Zapatos-->
+            <li class="nav-item dropdown">
+              <a class="nav-link text-barra" href="#" role="button" data-bs-toggle="dropdown">Zapatos</a>
+              <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="HTML/Pagina-Compra-Zapatos.html">Platforms</a></li>
+                  <li><a class="dropdown-item" href="HTML/Pagina-Compra-Zapatos.html">Pump</a></li>
+                  <li><a class="dropdown-item" href="HTML/Pagina-Compra-Zapatos.html">Sandals</a></li>
+                  <li><a class="dropdown-item" href="HTML/Pagina-Compra-Zapatos.html">Sneakers</a></li>
+               </ul>
+              
+            </li>
+            <!--Kitchen & Drink-->
+            <li class="nav-item dropdown">
+              <a class="nav-link text-barra" href="#" role="button" data-bs-toggle="dropdown">Kitchen & Drink</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="HTML/Pagina-Compra-Kitchen.html">Bottle</a></li>
+                <li><a class="dropdown-item" href="HTML/Pagina-Compra-Kitchen.html">Cup</a></li>
+                <li><a class="dropdown-item" href="HTML/Pagina-Compra-Kitchen.html">Straws</a></li>
+                <li><a class="dropdown-item" href="HTML/Pagina-Compra-Kitchen.html">Travel Sets</a></li>
+              </ul>
+            </li>
+            
+            <!--Contacto-->
+            <li class="nav-item">
+              <a class="nav-link text-barra" href="HTML/Contactanos.html">Contacto</a>
+            </li>
+            <!--Conócenos-->
+            <li class="nav-item">
+              <a class="nav-link text-barra" href="HTML/Conocenos.html">Conócenos</a>
+            </li>  
+          </ul>
+        </div>
+        <div class="usuario">
+          <i style='font-size:24px' class='fas'>
+          
+          <!-- Cart-Icon -->
+          <i class='bx bx-shopping-bag shop-icon' id="cart-icon"></i>
+          <!-- Cart -->
+          <div class="cart">
+              <h2 class="cart-title">Tu Carrito</h2>
+              <!-- Content -->
+              <div class="cart-content">
+  
+              </div>
+              <!-- Total -->
+              <div class="total">
+                  <div class="total-title">Total</div>
+                  <div class="total-price">$0</div>
+              </div>
+              <!-- Buy Button -->
+              <!-- <button type="button" class="btn-buy">Buy Now</button>-->
+              
+              <a href="HTML/Pago-Tarerjeta.html">
+                  <button type="button" class="btn-buy">Buy Now</button>
+              </a> 
+              <!-- Cart Close -->
+              <i class='bx bx-x' id="close-cart"></i>
+  
+          </div>
+  
+          </i>
+            
+            
+  
+        </div>
+        
+      </div>
+    </nav>
+    <!--Final Barra de Navegación-->
+  </div>
+
+      <!--Banner-->
+      <div class="flexslider">
+        <ul class="slides">
+          <li>
+            <img src="IMG/Banner-Navidad.jpg" alt="">
+          </li>
+          <li>
+            <img src="IMG/Banner-NewYear.jpg" alt="">
+          </li>
+          <li>
+            <img src="IMG/Banner-BlackFriday.jpg" alt="">
+          </li>
+        </ul>
+
+        <!--Curva-->
+       <div class="wave">
+        <div class="sub-wave" >
+          <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+            <path d="M-25.11,149.52 C126.12,21.22 282.44,-118.89 521.16,173.20 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;">
+            </path>
+          </svg>
+        </div>
+      </div>
+      </div>
+       
+      <!--Contenido-->
+      <div class="container">
+        <!--Caracteristicas Eco-->
+        <div class="eco row ">
+          <div class="col-12 col-sm-4">
+            <div class="d-flex flex-row align-items-center">
+              <i class='fas fas2'>&#xf2f1;</i>
+              <h4>Sostenible y reutilizable</h4>
+            </div>
+            <p>Pajillas de plástico de un solo uso</p> 
+          </div>
+
+          <div class="col-12 col-sm-4">
+            <div class="d-flex flex-row align-items-center">
+              <i class='fas fas2'>&#xf06b;</i>
+              <h4>Embalaje ecologico</h4>
+            </div>
+            <p>¡CERO envase de plástico!</p> 
+          </div>
+
+          <div class="col-12 col-sm-4">
+            <div class="d-flex flex-row align-items-center">
+              <i class='fas fas2'>&#xf4be;</i>
+              <h4>Devolvemos</h4>
+            </div>
+            <p>¡Donaciones hechas por cada compra!</p> 
+          </div>  
+        </div>
+        <!--Fin Caracteristicas Eco-->
+
+        <!--Novedades-->
+        <div class="novedades-body">
+          <div class="row novedades-sub">
+            <div class="col-sm-4 novedades-hr1"></div>
+            <div class="col-sm-4 novedades-h1"><h1>NOVEDADES</h1></div>
+            <div class="col-sm-4 novedades-hr2"></div>
+          </div>
+
+            <div class="contenedor row novedades">
+              <a href="PRODUCTOS-zapatos/DEVIANT-204.html" class="col-6 col-sm-6 col-md-3 novedades-img">
+                <figure>
+                       <img src="IMG/novedades (4).jpg">
+                       <div class="capa">
+                        <div class="sub-capa">
+                          <p>Deviant-204</p>
+                          <button type="button" class="btn btn-primary">Comprar</button>
+                        </div>
+                       </div>
+                </figure>
+              </a>
+
+               <a href="PRODUCTOS-zapatos/DEVIANT-110.html" class="col-6 col-sm-6 col-md-3 novedades-img">
+                <figure>
+                    <img src="IMG/novedades (2).png">
+                    <div class="capa">
+                      <div class="sub-capa">
+                        <p>Deviant-110</p>
+                        <button type="button" class="btn btn-primary">Comprar</button>
+                      </div>
+                    </div>
+                </figure>
+              </a>
+
+              <a href="PRODUCTOS-zapatos/DEVIANT-203.html" class="col-6 col-sm-6 col-md-3 novedades-img">
+                <figure>
+                    <img src="IMG/novedades (3).jpg">
+                    <div class="capa">
+                      <div class="sub-capa">
+                        <p>Deviant-203</p>
+                        <button type="button" class="btn btn-primary">Comprar</button>
+                      </div>
+                    </div>
+                </figure>
+              </a>
+
+              <a href="PRODUCTOS-zapatos/DEVIANT-08.html" class="col-6 col-sm-6 col-md-3 novedades-img">
+                <figure>
+                    <img src="IMG/novedades (1).png">
+                    <div class="capa">
+                      <div class="sub-capa">
+                        <p>Deviant-08</p>
+                        <button type="button" class="btn btn-primary">Comprar</button>
+                      </div>
+                    </div>
+                </figure>
+              </a>
+            </div>
+
+        </div> 
+
+        <!--Categoria-->
+        <div class="row novedades-body categoria d-flex justify-content-around">
+          <!--Boot Collection-->
+          <div class="col-12 col-sm-6 sub-categoria ">
+              <img src="IMG/categoria1.jpg" alt="" srcset="">
+              <div class="h1-categoria"><a href="HTML/Pagina-Compra-Zapatos.html"><p> Halloween Collection</p></a></div> 
+          </div>
+          <!--Halloween Collection-->
+          <div class="col-12 col-sm-6 sub-categoria">
+            <img src="IMG/categoria2.jpg" alt="" srcset="">
+            <div class="h1-categoria"><a href="HTML/Pagina-Compra-Zapatos.html" class="shadow-categoria"><p>Boots Collection</p> </a></div>
+          </div>
+        </div>
+
+         <!--Best Seller -->
+        <div class="novedades-body">
+          <div class="row novedades-sub">
+            <div class="col-sm-4 novedades-hr1"></div>
+            <div class="col-sm-4 novedades-h1"><h1>BEST SELLER</h1></div>
+            <div class="col-sm-4 novedades-hr2"></div>
+          </div>
+            
+            <div class="contenedor row novedades">
+              <a href="PRODUCTOS-zapatos/ASHES-12.html" class="col-6 col-sm-6 col-md-3 novedades-img">
+                <figure>
+                      <img src="IMG/best seller (3).jpg">
+                      <div class="capa">
+                        <div class="sub-capa">
+                          <p>Ashes-12</p>
+                          <button type="button" class="btn btn-primary">Comprar</button>
+                        </div>
+                      </div>
+                </figure>
+              </a>
+
+              <a href="PRODUCTOS-zapatos/FUNN-10.html" class="col-6 col-sm-6 col-md-3 novedades-img">
+                <figure>
+                    <img src="IMG/best seller (4).jpg">
+                    <div class="capa">
+                      <div class="sub-capa">
+                        <p>Funn-10</p>
+                        <button type="button" class="btn btn-primary">Comprar</button>
+                      </div>
+                    </div>
+                </figure>
+              </a>
+
+              <a href="PRODUCTOS-zapatos/EMILY-100.html" class="col-6 col-sm-6 col-md-3 novedades-img">
+                <figure>
+                    <img src="IMG/best seller (1).jpg">
+                    <div class="capa">
+                      <div class="sub-capa">
+                        <p>Emily-100</p>
+                        <button type="button" class="btn btn-primary">Comprar</button>
+                      </div>
+                    </div>
+                </figure>
+              </a>
+
+              <a href="PRODUCTOS-zapatos/GRAVEDIGGER-04.html" class="col-6 col-sm-6 col-md-3 novedades-img">
+                <figure>
+                    <img src="IMG/best seller (2).jpg">
+                    <div class="capa">
+                      <div class="sub-capa">
+                        <p>Gravedigger-04</p>
+                        <button type="button" class="btn btn-primary">Comprar</button>
+                      </div>
+                    </div>
+                </figure>
+              </a>
+            </div>
+        </div> 
+      </div>
+      
+      <!--Galeria-->
+      <div class="container-fluid galeria">
+        <h1>Descubre nuevos estilos</h1>
+        <div class="row column-galeria">
+          <div class="col-4 col-sm-3 col-lg-2"><img src="IMG/galeria.jpg" ></div>
+          <div class="col-4 col-sm-3 col-lg-2"><img src="IMG/galeria1.jpg" ></div>
+          <div class="col-4 col-sm-3 col-lg-2"><img src="IMG/galeria2.jpg" ></div>
+          <div class="col-4 col-sm-3 col-lg-2"><img src="IMG/galeria3.jpg" ></div>
+          <div class="col-4 col-sm-3 col-lg-2"><img src="IMG/galeria4.jpg" ></div>
+          <div class="col-4 col-sm-3 col-lg-2"><img src="IMG/galeria5.jpg" ></div>
+          <div class="col-4 col-sm-3 col-lg-2"><img src="IMG/galeria6.jpg" ></div>
+          <div class="col-4 col-sm-3 col-lg-2"><img src="IMG/galeria7.jpg" ></div>
+          <div class="col-4 col-sm-3 col-lg-2"><img src="IMG/galeria8.jpg" ></div>
+          <div class="col-4 col-sm-3 col-lg-2"><img src="IMG/galeria9.jpg" ></div>
+          <div class="col-4 col-sm-3 col-lg-2"><img src="IMG/galeria10.jpg" ></div>
+          <div class="col-4 col-sm-3 col-lg-2"><img src="IMG/galeria11.jpg" ></div>
+        </div>
+      </div>
+  
+
+      
+
+      
+      <div class="footer">
+        <div class="contenido-foo ">
+          <div class="row m-2">
+            <div class="col-6 col-sm-4 col-xl-3">
+              <h4>Compañia</h4>
+              <ul>
+                  <li>
+                      <a href="HTML/Conocenos.html">Cónocenos</a>
+                  </li>
+                  <li>
+                      <a href="HTML/Politicas.html">Política de Privacidad</a>
+                  </li>
+                  <li>
+                      <a href="HTML/terminos.html">Términos y condiciones</a>
+                  </li>
+                  <li>
+                    <a href="">Preguntas frecuentes</a>
+                    </li>
+                  <li>
+                      <a href="">Contáctanos</a>
+                  </li>
+              </ul>
+            </div>
+            <div class="col-6 col-sm-4 col-xl-3">
+              <h4>Zapatos</h4>
+              <ul>
+                  <li>
+                      <a href="HTML/Pagina-Compra-Zapatos.html">Platforms</a>
+                  </li>
+                  <li>
+                      <a href="HTML/Pagina-Compra-Zapatos.html">Pump</a>
+                  </li>
+                  <li>
+                      <a href="HTML/Pagina-Compra-Zapatos.html">Sandals</a>
+                  </li>
+                  <li>
+                      <a href="HTML/Pagina-Compra-Zapatos.html">Sneakers</a>
+                  </li>
+              </ul>
+            </div>
+            <div class="col-6 col-sm-4 col-xl-3">
+              <h4>Kitchen & Drink</h4>
+                  <ul>
+                      <li>
+                          <a href="HTML/Pagina-Compra-Kitchen.html">Bottle</a>
+                      </li>
+                      <li>
+                          <a href="HTML/Pagina-Compra-Kitchen.html">Cup</a>
+                      </li>
+                      <li>
+                          <a href="HTML/Pagina-Compra-Kitchen.html">Straws</a>
+                      </li>
+                      <li>
+                          <a href="HTML/Pagina-Compra-Kitchen.html">Travel Sets</a>
+                      </li>
+                  </ul>
+            </div>
+            <div class="col-6 col-sm-12 col-xl-3">
+              <img src="IMG/logo_02.png" alt=" ">
+            </div>
+          </div>
+        </div>
+        <h2 class="foo">&copy; 2021 Copyright SirenBunny. Todos los derechos reservados</h2>
+      </div>
+    
+</body>
+
+    
+     <!--JS-->
+     <script src="index.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+     <script src="jquery.flexslider.js"></script>
+     <script type="text/javascript" charset="utf-8">
+     $(window).load(function() {
+       $('.flexslider').flexslider({
+         touch: true,
+         pauseOnAction: false,
+         pauseOnHover: false,
+       });
+     });
+   </script>
+
+<script src="JS/main.js"></script>
+
+<script>
+    filterSelection("all")
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("filterDiv");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+    
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+      }
+    }
+    
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);     
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+    
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function(){
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+    </script>
+</html>
