@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SirenBunny | Kitchen & Drink</title>
+    <link rel="icon" href="../IMG/icon.png">
+<!--CDN Boostrap-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Box Icons -->
+<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+ <!--W3-->
+ <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+ <!--Iconos-->
+ <script src="https://kit.fontawesome.com/120dce4598.js" crossorigin="anonymous"></script>
+<!-- Fonts -->
+<link href="https://fonts.cdnfonts.com/css/d-din?styles=37959,37958,37957,37961,37964,37963,37960,37962" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/jungle-adventurer" rel="stylesheet">
+ <!--CSS-->
+ <link rel="stylesheet" href="../estilo.css">
+ <link rel="stylesheet" href="../CSS/style.css">
+ <link rel="stylesheet" href="../CSS/style-zapatos-cocina.css">
+
+        <!-- Fonts -->
+    <link href="https://fonts.cdnfonts.com/css/d-din?styles=37959,37958,37957,37961,37964,37963,37960,37962" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/jungle-adventurer" rel="stylesheet">
+
+</head>
+<body>
+     <!--Barra de Anuncios--> 
+     <div class="d-flex justify-content-between promociones  ">
+        <div></div>
+        <!--Descuentos-->
+          <div class="h1-promociones ">
+            <div class="item">Compra 2 y Ahorra US$3</div>
+            <div class="item">Compra 3 y Ahorra US$5</div>
+            <div class="item">Compra 3 y obten el 60%</div>
+          </div>
+  
+        <!--Temporizador-->
+        <div class="temporizador d-flex">
+          <div class="horas" id="horas">--</div>
+          <p>H</p>
+          <div class="minutos" id="minutos">--</div>
+          <p>M</p>
+          <div class="segundos" id="segundos">--</div>
+          <p>S</p>
+        </div>
+      </div>
+      <!--Final Barra de Anuncios--> 
+    
+<!--Logo-->
+<div class="logo">
+    <a href="../index.html"><img src="../IMG/logo_01.png" class="mx-auto d-block"></a>
+  </div>
+  
+  
+  
+  </div>
+  
+  <!--Barra de Navegación-->
+  <div class="sticky-top">
+    <nav class="navbar navbar-expand-sm navbar-dark barra">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-start" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <!--Zapatos-->
+            <li class="nav-item dropdown">
+              <a class="nav-link text-barra" href="#" role="button" data-bs-toggle="dropdown">Zapatos</a>
+              <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="Pagina-Compra-Zapatos.html">Platforms</a></li>
+                  <li><a class="dropdown-item" href="Pagina-Compra-Zapatos.html">Pump</a></li>
+                  <li><a class="dropdown-item" href="Pagina-Compra-Zapatos.html">Sandals</a></li>
+                  <li><a class="dropdown-item" href="Pagina-Compra-Zapatos.html">Sneakers</a></li>
+               </ul>
+              
+            </li>
+            <!--Kitchen & Drink-->
+            <li class="nav-item dropdown">
+              <a class="nav-link text-barra" href="#" role="button" data-bs-toggle="dropdown">Kitchen & Drink</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#Bottle">Bottle</a></li>
+                <li><a class="dropdown-item" href="#Cup">Cup</a></li>
+                <li><a class="dropdown-item" href="#Straws">Straws</a></li>
+                <li><a class="dropdown-item" href="#Travel">Travel Sets</a></li>
+              </ul>
+            </li>
+            
+            <!--Contacto-->
+            <li class="nav-item">
+              <a class="nav-link text-barra" href="Contactanos.html">Contacto</a>
+            </li>
+            <!--Conócenos-->
+            <li class="nav-item">
+              <a class="nav-link text-barra" href="Conocenos.html">Conócenos</a>
+            </li>  
+          </ul>
+        </div>
+        <div class="usuario">
+          <i style='font-size:24px' class='fas'>
+          
+          <!-- Cart-Icon -->
+          <i class='bx bx-shopping-bag shop-icon' id="cart-icon"></i>
+          <!-- Cart -->
+          <div class="cart">
+              <h2 class="cart-title">Tu Carrito</h2>
+              <!-- Content -->
+              <div class="cart-content">
+  
+              </div>
+              <!-- Total -->
+              <div class="total">
+                  <div class="total-title">Total</div>
+                  <div class="total-price">$0</div>
+              </div>
+              <!-- Buy Button -->
+              <!-- <button type="button" class="btn-buy">Buy Now</button>-->
+              
+              <a href="../HTML/Pago-Tarerjeta.html">
+                  <button type="button" class="btn-buy">Buy Now</button>
+              </a> 
+              <!-- Cart Close -->
+              <i class='bx bx-x' id="close-cart"></i>
+  
+          </div>
+  
+          </i>
+            
+            
+  
+        </div>
+        
+      </div>
+    </nav>
+    <!--Final Barra de Navegación-->
+  </div>
+
+    
+    <!-- Shop -->
+    <section class="shop container">
+
+        <h2 class="section-title">COCINA Y BEBIDAS</h2>      
+        
+        <div class="menu-filter" id="myBtnContainer">
+            <button class="boton active" onclick="filterSelection('all')"> TODO</button>
+            <button class="boton" onclick="filterSelection('BOTTLE')"> BOTTLE</button>
+            <button class="boton" onclick="filterSelection('CUP')"> CUP</button>
+            <button class="boton" onclick="filterSelection('STRAWS')"> STRAWS</button>
+            <button class="boton" onclick="filterSelection('FLATWARE')"> FLATWARE</button>
+          </div>
+
+        <!-- Content -->
+        <div class="shop-content">
+
+            <!-- BOTTLE-->
+            <!-- Box 1 -->
+            <div class="filterDiv BOTTLE" id="Bottle">
+            <div class="product-box">
+                <img src="../IMG/Catalogo/02- Kitchen and Drink/Drinks/Botellas Metalicas/01- Siren Bottle/Bottle.jpg" alt="" class="product-img">
+                <h2 class="product-title"><a href="../PRODUCTOS-cocina/SIREN BOTTLE.html">SIREN BOTTLE</a></h2>
+                
+                <span class="price">$40.00</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            </div>
+
+            <!-- Box 2 -->
+            <div class="filterDiv BOTTLE">
+                <div class="product-box">
+                    <img src="../IMG/Catalogo/02- Kitchen and Drink/Drinks/Botellas Metalicas/02- Bunny Bottle/Bottle.png" alt="" class="product-img">
+                    <h2 class="product-title"><a href="../PRODUCTOS-cocina/BUNNY BOTTLE.html">BUNNY BOTTLE</a></h2>
+                    
+                    <span class="price">$40.00</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+                </div>
+
+                <!-- Box 3 -->
+            <div class="filterDiv BOTTLE">
+                <div class="product-box">
+                    <img src="../IMG/Catalogo/02- Kitchen and Drink/Drinks/Botellas Metalicas/03- Lavender Bottle/Bottle.png" alt="" class="product-img">
+                    <h2 class="product-title"><a href="../PRODUCTOS-cocina/LAVENDER BOTTLE.html">LAVENDER BOTTLE</a></h2>
+                    
+                    <span class="price">$40.00</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+                </div>
+
+                <!-- Box 4 -->
+            <div class="filterDiv BOTTLE">
+                <div class="product-box">
+                    <img src="../IMG/Catalogo/02- Kitchen and Drink/Drinks/Botellas Metalicas/04- White Bottle/Bottle.png" alt="" class="product-img">
+                    <h2 class="product-title"><a href="../PRODUCTOS-cocina/WHITE BOTTLE.html">WHITE BOTTLE</a></h2>
+                    
+                    <span class="price">$40.00</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+                </div>
+
+            
+<!-- CUP-->
+            <!-- Box 1 -->
+            <div class="filterDiv CUP" id="Cup">
+              <div class="product-box">
+                  <img src="../IMG/Catalogo/02- Kitchen and Drink/Drinks/Copas Metalicas/01- Siren Cup/Cup 01.png" alt="" class="product-img">
+                  <h2 class="product-title"><a href="../PRODUCTOS-cocina/SIREN CUP.html">SIREN CUP</a></h2>
+                  
+                  <span class="price">$30.00</span>
+                  <i class='bx bx-shopping-bag add-cart'></i>
+              </div>
+              </div>
+  
+              <!-- Box 2 -->
+              <div class="filterDiv CUP">
+                  <div class="product-box">
+                      <img src="../IMG/Catalogo/02- Kitchen and Drink/Drinks/Copas Metalicas/02- Bunny Cup/Cup 01.png" alt="" class="product-img">
+                      <h2 class="product-title"><a href="../PRODUCTOS-cocina/BUNNY CUP.html">BUNNY CUP</a></h2>
+                      
+                      <span class="price">$30.00</span>
+                      <i class='bx bx-shopping-bag add-cart'></i>
+                  </div>
+                  </div>
+  
+                  <!-- Box 3 -->
+              <div class="filterDiv CUP">
+                  <div class="product-box">
+                      <img src="../IMG/Catalogo/02- Kitchen and Drink/Drinks/Copas Metalicas/03- Lavender Cup/Cup 01.png" alt="" class="product-img">
+                      <h2 class="product-title"><a href="../PRODUCTOS-cocina/LAVANDER CUP.html">LAVANDER CUP</a></h2>
+                      
+                      <span class="price">$30.00</span>
+                      <i class='bx bx-shopping-bag add-cart'></i>
+                  </div>
+                  </div>
+  
+                  <!-- Box 4 -->
+              <div class="filterDiv CUP">
+                  <div class="product-box">
+                      <img src="../IMG/Catalogo/02- Kitchen and Drink/Drinks/Copas Metalicas/04- White Cup/Cup 01.png" alt="" class="product-img">
+                      <h2 class="product-title"><a href="../PRODUCTOS-cocina/WHITE CUP.html">WHITE CUP</a></h2>
+                      
+                      <span class="price">$30.00</span>
+                      <i class='bx bx-shopping-bag add-cart'></i>
+                  </div>
+                  </div>
+ 
+
+<!-- STRAWS-->
+  <!-- siren-->
+            <!-- Box 1 -->
+            <div class="filterDiv STRAWS" id="Straws">
+              <div class="product-box">
+                  <img src="../IMG/Catalogo/02- Kitchen and Drink/Drinks/Pajitas Metalicas/01- Stainless/01- Siren Straws/Combo.png" alt="" class="product-img">
+                  <h2 class="product-title"><a href="../PRODUCTOS-cocina/SIREN STAINLESS STEEL STRAWS.html">SIREN STAINLESS STEEL STRAWS</a></h2>
+                  
+                  <span class="price">$5.00</span>
+                  <i class='bx bx-shopping-bag add-cart'></i>
+              </div>
+              </div>
+  
+              <!-- Box 2 -->
+              <div class="filterDiv STRAWS">
+                  <div class="product-box">
+                      <img src="../IMG/Catalogo/02- Kitchen and Drink/Drinks/Pajitas Metalicas/02- Minis/01- Siren Straws/Combo 5.png" alt="" class="product-img">
+                      <h2 class="product-title"><a href="../PRODUCTOS-cocina/MINI SIREN STRAWS.html">MINI SIREN STRAWS</a></h2>
+                      
+                      <span class="price">$3.00</span>
+                      <i class='bx bx-shopping-bag add-cart'></i>
+                  </div>
+                  </div>
+  
+                  <!-- Box 3 -->
+              <div class="filterDiv STRAWS">
+                  <div class="product-box">
+                      <img src="../IMG/Catalogo/02- Kitchen and Drink/Drinks/Pajitas Metalicas/04- Boba/01- Siren Straws/Combo 4.png" alt="" class="product-img">
+                      <h2 class="product-title"><a href="../PRODUCTOS-cocina/SIREN BOBA STRAWS.html">SIREN BOBA STRAWS</a></h2>
+                      
+                      <span class="price">$7.00</span>
+                      <i class='bx bx-shopping-bag add-cart'></i>
+                  </div>
+                  </div>
+  
+                  <!-- Box 4 -->
+              <div class="filterDiv STRAWS">
+                  <div class="product-box">
+                      <img src="../IMG/Catalogo/02- Kitchen and Drink/Drinks/Pajitas Metalicas/05- Telescopic/01- Siren Straws/Tele 01.png" alt="" class="product-img">
+                      <h2 class="product-title"><a href="../PRODUCTOS-cocina/TELESCOPIC SIREN STRAW.html">TELESCOPIC SIREN STRAW</a></h2>
+                      
+                      <span class="price">$15.00</span>
+                      <i class='bx bx-shopping-bag add-cart'></i>
+                  </div>
+                  </div>
+
+
+<!-- bunny-->
+            <!-- Box 1 -->
+            <div class="filterDiv STRAWS">
+              <div class="product-box">
+                  <img src="../IMG/Catalogo/02- Kitchen and Drink/Drinks/Pajitas Metalicas/01- Stainless/02- Bunny Straws/Combo.png" alt="" class="product-img">
+                  <h2 class="product-title"><a href="../PRODUCTOS-cocina/BUNNY STAINLESS STEEL STRAWS.html">BUNNY STAINLESS STEEL STRAWS</a></h2>
+                  
+                  <span class="price">$5.00</span>
+                  <i class='bx bx-shopping-bag add-cart'></i>
+              </div>
+              </div>
+  
+              <!-- Box 2 -->
+              <div class="filterDiv STRAWS">
+                  <div class="product-box">
+                      <img src="../IMG/Catalogo/02- Kitchen and Drink/Drinks/Pajitas Metalicas/02- Minis/02- Bunny Straws/Combo 10.png" alt="" class="product-img">
+                      <h2 class="product-title"><a href="../PRODUCTOS-cocina/MINI BUNNY STRAWS.html">MINI BUNNY STRAWS</a></h2>
+                      
+                      <span class="price">$3.00</span>
+                      <i class='bx bx-shopping-bag add-cart'></i>
+                  </div>
+                  </div>
+  
+                  <!-- Box 3 -->
+              <div class="filterDiv STRAWS">
+                  <div class="product-box">
+                      <img src="../IMG/Catalogo/02- Kitchen and Drink/Drinks/Pajitas Metalicas/04- Boba/02- Bunny Straws/Combo 4.png" alt="" class="product-img">
+                      <h2 class="product-title"><a href="../PRODUCTOS-cocina/BUNNY BOBA STRAWS.html">BUNNY BOBA STRAWS</a></h2>
+                      
+                      <span class="price">$7.00</span>
+                      <i class='bx bx-shopping-bag add-cart'></i>
+                  </div>
+                  </div>
+  
+                  <!-- Box 4 -->
+              <div class="filterDiv STRAWS">
+                  <div class="product-box">
+                      <img src="../IMG/Catalogo/02- Kitchen and Drink/Drinks/Pajitas Metalicas/05- Telescopic/02- Bunny Straws/Tele 01.png" alt="" class="product-img">
+                      <h2 class="product-title"><a href="../PRODUCTOS-cocina/TELESCOPIC BUNNY STRAW.html">TELESCOPIC BUNNY STRAW</a></h2>
+                      
+                      <span class="price">$15.00</span>
+                      <i class='bx bx-shopping-bag add-cart'></i>
+                  </div>
+                  </div>
+
+<!-- Ocean-->
+            <!-- Box 1 -->
+            <div class="filterDiv STRAWS">
+              <div class="product-box">
+                  <img src="../IMG/Catalogo/02- Kitchen and Drink/Drinks/Pajitas Metalicas/01- Stainless/03- Ocean Straws/Combo.png" alt="" class="product-img">
+                  <h2 class="product-title"><a href="../PRODUCTOS-cocina/OCEAN STAINLESS STEEL STRAWS.html">OCEAN STAINLESS STEEL STRAWS</a></h2>
+                  
+                  <span class="price">$5.00</span>
+                  <i class='bx bx-shopping-bag add-cart'></i>
+              </div>
+              </div>
+  
+              <!-- Box 2 -->
+              <div class="filterDiv STRAWS">
+                  <div class="product-box">
+                      <img src="../IMG/Catalogo/02- Kitchen and Drink/Drinks/Pajitas Metalicas/02- Minis/03- Ocean Straws/Combo 10.png" alt="" class="product-img">
+                      <h2 class="product-title"><a href="../PRODUCTOS-cocina/MINI OCEAN STRAWS.html">MINI OCEAN STRAWS</a></h2>
+                      
+                      <span class="price">$3.00</span>
+                      <i class='bx bx-shopping-bag add-cart'></i>
+                  </div>
+                  </div>
+  
+                  <!-- Box 3 -->
+              <div class="filterDiv STRAWS">
+                  <div class="product-box">
+                      <img src="../IMG/Catalogo/02- Kitchen and Drink/Drinks/Pajitas Metalicas/04- Boba/03- Ocean Straws/Combo 4.png" alt="" class="product-img">
+                      <h2 class="product-title"><a href="../PRODUCTOS-cocina/OCEAN BOBA STRAWS.html">OCEAN BOBA STRAWS</a></h2>
+                      
+                      <span class="price">$7.00</span>
+                      <i class='bx bx-shopping-bag add-cart'></i>
+                  </div>
+                  </div>
+  
+                  <!-- Box 4 -->
+              <div class="filterDiv STRAWS">
+                  <div class="product-box">
+                      <img src="../IMG/Catalogo/02- Kitchen and Drink/Drinks/Pajitas Metalicas/05- Telescopic/03- Ocean Straws/Tele 01.png" alt="" class="product-img">
+                      <h2 class="product-title"><a href="../PRODUCTOS-cocina/TELESCOPIC OCEAN STRAW.html">TELESCOPIC OCEAN STRAW</a></h2>
+                      
+                      <span class="price">$15.00</span>
+                      <i class='bx bx-shopping-bag add-cart'></i>
+                  </div>
+                  </div>
+
+<!-- golden-->
+            <!-- Box 1 -->
+            <div class="filterDiv STRAWS">
+              <div class="product-box">
+                  <img src="../IMG/Catalogo/02- Kitchen and Drink/Drinks/Pajitas Metalicas/01- Stainless/04- Golden Straws/Combo.png" alt="" class="product-img">
+                  <h2 class="product-title"><a href="../PRODUCTOS-cocina/GOLDEN STAINLESS STEEL STRAWS.html">GOLDEN STAINLESS STEEL STRAWS</a></h2>
+                  
+                  <span class="price">$5.00</span>
+                  <i class='bx bx-shopping-bag add-cart'></i>
+              </div>
+              </div>
+  
+              <!-- Box 2 -->
+              <div class="filterDiv STRAWS">
+                  <div class="product-box">
+                      <img src="../IMG/Catalogo/02- Kitchen and Drink/Drinks/Pajitas Metalicas/02- Minis/04- Golden Straws/Combo 5.png" alt="" class="product-img">
+                      <h2 class="product-title"><a href="../PRODUCTOS-cocina/MINI GOLDEN STRAWS.html">MINI GOLDEN STRAWS</a></h2>
+                      
+                      <span class="price">$3.00</span>
+                      <i class='bx bx-shopping-bag add-cart'></i>
+                  </div>
+                  </div>
+  
+                  <!-- Box 3 -->
+              <div class="filterDiv STRAWS">
+                  <div class="product-box">
+                      <img src="../IMG/Catalogo/02- Kitchen and Drink/Drinks/Pajitas Metalicas/04- Boba/04- Golden Straws/Combo 4.png" alt="" class="product-img">
+                      <h2 class="product-title"><a href="../PRODUCTOS-cocina/GOLDEN BOBA STRAWS.html">GOLDEN BOBA STRAWS</a></h2>
+                      
+                      <span class="price">$7.00</span>
+                      <i class='bx bx-shopping-bag add-cart'></i>
+                  </div>
+                  </div>
+  
+                  <!-- Box 4 -->
+              <div class="filterDiv STRAWS">
+                  <div class="product-box">
+                      <img src="../IMG/Catalogo/02- Kitchen and Drink/Drinks/Pajitas Metalicas/05- Telescopic/04- Golden Straws/Tele 01.png" alt="" class="product-img">
+                      <h2 class="product-title"><a href="../PRODUCTOS-cocina/TELESCOPIC GOLDEN STRAW.html">TELESCOPIC GOLDEN STRAW</a></h2>
+                      
+                      <span class="price">$15.00</span>
+                      <i class='bx bx-shopping-bag add-cart'></i>
+                  </div>
+                  </div>
+
+
+<!-- FLATWARE-->
+<!-- Siren-->
+            <!-- Box 1 -->
+            <div class="filterDiv FLATWARE" id="Travel">
+              <div class="product-box">
+                  <img src="../IMG/Catalogo/02- Kitchen and Drink/Kitchen/Travel Set/Siren Traveler/Siren Traveler.png" alt="" class="product-img">
+                  <h2 class="product-title"><a href="../PRODUCTOS-cocina/SIREN TRAVEL SET.html">SIREN TRAVEL SET</a></h2>
+                  
+                  <span class="price">$32.00</span>
+                  <i class='bx bx-shopping-bag add-cart'></i>
+              </div>
+              </div>
+  
+              <!-- Box 2 -->
+              <div class="filterDiv FLATWARE">
+                  <div class="product-box">
+                      <img src="../IMG/Catalogo/02- Kitchen and Drink/Kitchen/Single Pieces/Siren Flatware/Siren Fork.png" alt="" class="product-img">
+                      <h2 class="product-title"><a href="../PRODUCTOS-cocina/SIREN FORK (SINGLE).html">SIREN FORK (SINGLE)</a></h2>
+                      
+                      <span class="price">$3.00</span>
+                      <i class='bx bx-shopping-bag add-cart'></i>
+                  </div>
+                  </div>
+  
+                  <!-- Box 3 -->
+              <div class="filterDiv FLATWARE">
+                  <div class="product-box">
+                      <img src="../IMG/Catalogo/02- Kitchen and Drink/Kitchen/Single Pieces/Siren Flatware/Siren Knife.png" alt="" class="product-img">
+                      <h2 class="product-title"><a href="../PRODUCTOS-cocina/SIREN KNIFE (SINGLE).html">SIREN KNIFE (SINGLE)</a></h2>
+                      
+                      <span class="price">$3.00</span>
+                      <i class='bx bx-shopping-bag add-cart'></i>
+                  </div>
+                  </div>
+  
+                  <!-- Box 4 -->
+              <div class="filterDiv FLATWARE">
+                  <div class="product-box">
+                      <img src="../IMG/Catalogo/02- Kitchen and Drink/Kitchen/Single Pieces/Siren Flatware/Siren Big Spoon.png" alt="" class="product-img">
+                      <h2 class="product-title"><a href="../PRODUCTOS-cocina/SIREN BIG SPOON (SINGLE).html">SIREN BIG SPOON (SINGLE)</a></h2>
+                      
+                      <span class="price">$3.00</span>
+                      <i class='bx bx-shopping-bag add-cart'></i>
+                  </div>
+                  </div>
+
+<!-- bunny-->
+            <!-- Box 1 -->
+            <div class="filterDiv FLATWARE">
+              <div class="product-box">
+                  <img src="../IMG/Catalogo/02- Kitchen and Drink/Kitchen/Travel Set/Bunny Traveler/Bunny Traveler.png" alt="" class="product-img">
+                  <h2 class="product-title"><a href="../PRODUCTOS-cocina/BUNNY TRAVEL SET.html">BUNNY TRAVEL SET</a></h2>
+                  
+                  <span class="price">$32.00</span>
+                  <i class='bx bx-shopping-bag add-cart'></i>
+              </div>
+              </div>
+  
+              <!-- Box 2 -->
+              <div class="filterDiv FLATWARE">
+                  <div class="product-box">
+                      <img src="../IMG/Catalogo/02- Kitchen and Drink/Kitchen/Single Pieces/Bunny Flatware/Bunny Fork.png" alt="" class="product-img">
+                      <h2 class="product-title"><a href="../PRODUCTOS-cocina/BUNNY FORK (SINGLE).html">BUNNY FORK (SINGLE)</a></h2>
+                      
+                      <span class="price">$3.00</span>
+                      <i class='bx bx-shopping-bag add-cart'></i>
+                  </div>
+                  </div>
+  
+                  <!-- Box 3 -->
+              <div class="filterDiv FLATWARE">
+                  <div class="product-box">
+                      <img src="../IMG/Catalogo/02- Kitchen and Drink/Kitchen/Single Pieces/Bunny Flatware/Bunny Knife.png" alt="" class="product-img">
+                      <h2 class="product-title"><a href="../PRODUCTOS-cocina/BUNNY KNIFE (SINGLE).html">BUNNY KNIFE (SINGLE)</a></h2>
+                      
+                      <span class="price">$3.00</span>
+                      <i class='bx bx-shopping-bag add-cart'></i>
+                  </div>
+                  </div>
+  
+                  <!-- Box 4 -->
+              <div class="filterDiv FLATWARE">
+                  <div class="product-box">
+                      <img src="../IMG/Catalogo/02- Kitchen and Drink/Kitchen/Single Pieces/Bunny Flatware/Bunny Big Spoon.png" alt="" class="product-img">
+                      <h2 class="product-title"><a href="../PRODUCTOS-cocina/BUNNY BIG SPOON (SINGLE.html">BUNNY BIG SPOON (SINGLE)</a></h2>
+                      
+                      <span class="price">$3.00</span>
+                      <i class='bx bx-shopping-bag add-cart'></i>
+                  </div>
+                  </div>
+        </div>
+            
+
+
+    </section>
+
+
+
+    <div class="footer">
+      <div class="contenido-foo ">
+        <div class="row m-2">
+          <div class="col-6 col-sm-4 col-xl-3">
+            <h4>Compañia</h4>
+            <ul>
+                <li>
+                    <a href="Conocenos.html">Cónocenos</a>
+                </li>
+                <li>
+                    <a href="Politicas.html">Política de Privacidad</a>
+                </li>
+                <li>
+                    <a href="terminos.html">Términos y condiciones</a>
+                </li>
+                <li>
+                  <a href="preguntas.html">Preguntas frecuentes</a>
+                  </li>
+                <li>
+                    <a href="Contactanos.html">Contáctanos</a>
+                </li>
+            </ul>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3">
+            <h4>Zapatos</h4>
+            <ul>
+                <li>
+                    <a href="Pagina-Compra-Zapatos.html">Platforms</a>
+                </li>
+                <li>
+                    <a href="Pagina-Compra-Zapatos.html">Pump</a>
+                </li>
+                <li>
+                    <a href="Pagina-Compra-Zapatos.html">Sandals</a>
+                </li>
+                <li>
+                    <a href="Pagina-Compra-Zapatos.html">Sneakers</a>
+                </li>
+            </ul>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3">
+            <h4>Kitchen & Drink</h4>
+                <ul>
+                    <li>
+                        <a href="Pagina-Compra-Kitchen.html">Bottle</a>
+                    </li>
+                    <li>
+                        <a href="Pagina-Compra-Kitchen.html">Cup</a>
+                    </li>
+                    <li>
+                        <a href="Pagina-Compra-Kitchen.html">Straws</a>
+                    </li>
+                    <li>
+                        <a href="Pagina-Compra-Kitchen.html">Travel Sets</a>
+                    </li>
+                </ul>
+          </div>
+          <div class="col-6 col-sm-12 col-xl-3">
+            <img src="../IMG/logo_02.png" alt=" ">
+          </div>
+        </div>
+      </div>
+      <h2 class="foo">&copy; 2021 Copyright SirenBunny. Todos los derechos reservados</h2>
+    </div>
+
+
+
+    <!-- Link TO JS -->
+    <!--JS-->
+    <script src="../index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="../jquery.flexslider.js"></script>
+    <script type="text/javascript" charset="utf-8">
+    $(window).load(function() {
+      $('.flexslider').flexslider({
+        touch: true,
+        pauseOnAction: false,
+        pauseOnHover: false,
+      });
+    });
+  </script>
+    <script src="../JS/main.js"></script>
+
+    <script>
+        filterSelection("all")
+        function filterSelection(c) {
+          var x, i;
+          x = document.getElementsByClassName("filterDiv");
+          if (c == "all") c = "";
+          for (i = 0; i < x.length; i++) {
+            w3RemoveClass(x[i], "show");
+            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+          }
+        }
+        
+        function w3AddClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+          }
+        }
+        
+        function w3RemoveClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            while (arr1.indexOf(arr2[i]) > -1) {
+              arr1.splice(arr1.indexOf(arr2[i]), 1);     
+            }
+          }
+          element.className = arr1.join(" ");
+        }
+        
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function(){
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+          });
+        }
+        </script>
+    
+</body>
+</html>
